@@ -53,8 +53,4 @@ Screen: Streamlit UI. Type order A first.
 
 "The biggest limit is that the 35 percent call effect comes from a small pilot, and I validated on one quarter. Next step is a four-week test of calls against no calls. Thank you."
 
-## Delivery notes
-- If you run over time, shorten the 1:15 - 1:45 section but keep the leakage point.
-- Say "about Rs 12,400 a month, if calls prevent 35 percent of returns" in one sentence so the assumption stays attached to the number.
-- Pre-fill order A before recording and change only the fields needed for B and D.
-- Upload the video to Google Drive, share with anyone with the link, and paste the link into `submission-form.md`.
+
