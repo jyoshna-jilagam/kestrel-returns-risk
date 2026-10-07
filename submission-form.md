@@ -1,7 +1,7 @@
 # Submission form
 
 **1. Github Repo URL**
-<PRIVATE_GITHUB_REPO_URL>
+https://github.com/jyoshna-jilagam/kestrel-returns-risk
 
 **2. What did you build, and what business decision does it support?**
 A pre-dispatch return-risk score, an API and a UI. It supports the decision of which orders get a Rs 45 confirmation call. On April to June 2026 data, calling orders above 11.2% risk would have made 665 calls, reached 168 of 245 returns and saved about Rs 37,695 (about Rs 12,400 for a 700-order month), assuming the policy's 35% prevention rate.
