@@ -1,0 +1,610 @@
+{
+  "pr_auc_ci": [
+    0.35867713454874195,
+    0.4758375665929256
+  ],
+  "mean_pred_valid": 0.11348009907242275,
+  "valid_rate": 0.11523988711194733,
+  "final_kind": "logreg",
+  "threshold": 0.112,
+  "results": {
+    "dummy": {
+      "pr_auc": 0.11523988711194733,
+      "roc_auc": 0.5,
+      "brier": 0.1019612202017594,
+      "accuracy": 0.8847601128880527,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 1881,
+      "fn": 245,
+      "at_break_even": {
+        "pr_auc": 0.11523988711194733,
+        "roc_auc": 0.5,
+        "brier": 0.1019612202017594,
+        "accuracy": 0.11523988711194733,
+        "precision": 0.11523988711194733,
+        "recall": 1.0,
+        "f1": 0.20666385491353859,
+        "tp": 245,
+        "fp": 1881,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "logreg": {
+      "pr_auc": 0.41582570678792624,
+      "roc_auc": 0.7884993869956277,
+      "brier": 0.08476745315984965,
+      "accuracy": 0.8946378174976481,
+      "precision": 0.7142857142857143,
+      "recall": 0.14285714285714285,
+      "f1": 0.23809523809523808,
+      "tp": 35,
+      "fp": 14,
+      "tn": 1867,
+      "fn": 210,
+      "at_break_even": {
+        "pr_auc": 0.41582570678792624,
+        "roc_auc": 0.7884993869956277,
+        "brier": 0.08476745315984965,
+        "accuracy": 0.7300094073377235,
+        "precision": 0.25263157894736843,
+        "recall": 0.6857142857142857,
+        "f1": 0.36923076923076925,
+        "tp": 168,
+        "fp": 497,
+        "tn": 1384,
+        "fn": 77
+      }
+    },
+    "xgb": {
+      "pr_auc": 0.39440200391223057,
+      "roc_auc": 0.7694430882400807,
+      "brier": 0.08631743490695953,
+      "accuracy": 0.8918156161806209,
+      "precision": 0.6530612244897959,
+      "recall": 0.1306122448979592,
+      "f1": 0.21768707482993196,
+      "tp": 32,
+      "fp": 17,
+      "tn": 1864,
+      "fn": 213,
+      "at_break_even": {
+        "pr_auc": 0.39440200391223057,
+        "roc_auc": 0.7694430882400807,
+        "brier": 0.08631743490695953,
+        "accuracy": 0.7234242709313264,
+        "precision": 0.23975720789074356,
+        "recall": 0.6448979591836734,
+        "f1": 0.3495575221238938,
+        "tp": 158,
+        "fp": 501,
+        "tn": 1380,
+        "fn": 87
+      }
+    },
+    "xgb_weighted": {
+      "pr_auc": 0.3869319654758598,
+      "roc_auc": 0.7703631372804306,
+      "brier": 0.11963042616844177,
+      "accuracy": 0.8466603951081844,
+      "precision": 0.35986159169550175,
+      "recall": 0.42448979591836733,
+      "f1": 0.3895131086142322,
+      "tp": 104,
+      "fp": 185,
+      "tn": 1696,
+      "fn": 141,
+      "at_break_even": {
+        "pr_auc": 0.3869319654758598,
+        "roc_auc": 0.7703631372804306,
+        "brier": 0.11963042616844177,
+        "accuracy": 0.3264346190028222,
+        "precision": 0.1400848999393572,
+        "recall": 0.9428571428571428,
+        "f1": 0.24392819429778248,
+        "tp": 231,
+        "fp": 1418,
+        "tn": 463,
+        "fn": 14
+      }
+    }
+  },
+  "valid_n": 2126,
+  "valid_pos": 245,
+  "train_n": 8378,
+  "total_train_rows": 10504,
+  "costs": [
+    {
+      "threshold": 0.05,
+      "calls": 1337,
+      "tp": 225,
+      "fp": 1112,
+      "fn": 20,
+      "precision": 0.168,
+      "recall": 0.918,
+      "total_cost": 251352.5,
+      "saving_vs_no_action": 30397.5
+    },
+    {
+      "threshold": 0.1,
+      "calls": 750,
+      "tp": 178,
+      "fp": 572,
+      "fn": 67,
+      "precision": 0.237,
+      "recall": 0.727,
+      "total_cost": 243855.0,
+      "saving_vs_no_action": 37895.0
+    },
+    {
+      "threshold": 0.112,
+      "calls": 665,
+      "tp": 168,
+      "fp": 497,
+      "fn": 77,
+      "precision": 0.253,
+      "recall": 0.686,
+      "total_cost": 244055.0,
+      "saving_vs_no_action": 37695.0
+    },
+    {
+      "threshold": 0.15,
+      "calls": 480,
+      "tp": 141,
+      "fp": 339,
+      "fn": 104,
+      "precision": 0.294,
+      "recall": 0.576,
+      "total_cost": 246597.5,
+      "saving_vs_no_action": 35152.5
+    },
+    {
+      "threshold": 0.2,
+      "calls": 317,
+      "tp": 112,
+      "fp": 205,
+      "fn": 133,
+      "precision": 0.353,
+      "recall": 0.457,
+      "total_cost": 250935.0,
+      "saving_vs_no_action": 30815.0
+    },
+    {
+      "threshold": 0.25,
+      "calls": 227,
+      "tp": 94,
+      "fp": 133,
+      "fn": 151,
+      "precision": 0.414,
+      "recall": 0.384,
+      "total_cost": 254130.0,
+      "saving_vs_no_action": 27620.0
+    },
+    {
+      "threshold": 0.3,
+      "calls": 179,
+      "tp": 81,
+      "fp": 98,
+      "fn": 164,
+      "precision": 0.453,
+      "recall": 0.331,
+      "total_cost": 257202.5,
+      "saving_vs_no_action": 24547.5
+    },
+    {
+      "threshold": 0.35,
+      "calls": 130,
+      "tp": 68,
+      "fp": 62,
+      "fn": 177,
+      "precision": 0.523,
+      "recall": 0.278,
+      "total_cost": 260230.0,
+      "saving_vs_no_action": 21520.0
+    },
+    {
+      "threshold": 0.4,
+      "calls": 94,
+      "tp": 56,
+      "fp": 38,
+      "fn": 189,
+      "precision": 0.596,
+      "recall": 0.229,
+      "total_cost": 263440.0,
+      "saving_vs_no_action": 18310.0
+    },
+    {
+      "threshold": 0.45,
+      "calls": 69,
+      "tp": 44,
+      "fp": 25,
+      "fn": 201,
+      "precision": 0.638,
+      "recall": 0.18,
+      "total_cost": 267145.0,
+      "saving_vs_no_action": 14605.0
+    },
+    {
+      "threshold": 0.5,
+      "calls": 49,
+      "tp": 35,
+      "fp": 14,
+      "fn": 210,
+      "precision": 0.714,
+      "recall": 0.143,
+      "total_cost": 269867.5,
+      "saving_vs_no_action": 11882.5
+    },
+    {
+      "threshold": 0.55,
+      "calls": 34,
+      "tp": 28,
+      "fp": 6,
+      "fn": 217,
+      "precision": 0.824,
+      "recall": 0.114,
+      "total_cost": 272010.0,
+      "saving_vs_no_action": 9740.0
+    },
+    {
+      "threshold": 0.6,
+      "calls": 25,
+      "tp": 20,
+      "fp": 5,
+      "fn": 225,
+      "precision": 0.8,
+      "recall": 0.082,
+      "total_cost": 274825.0,
+      "saving_vs_no_action": 6925.0
+    },
+    {
+      "threshold": 0.65,
+      "calls": 19,
+      "tp": 17,
+      "fp": 2,
+      "fn": 228,
+      "precision": 0.895,
+      "recall": 0.069,
+      "total_cost": 275762.5,
+      "saving_vs_no_action": 5987.5
+    },
+    {
+      "threshold": 0.7,
+      "calls": 16,
+      "tp": 14,
+      "fp": 2,
+      "fn": 231,
+      "precision": 0.875,
+      "recall": 0.057,
+      "total_cost": 276835.0,
+      "saving_vs_no_action": 4915.0
+    },
+    {
+      "threshold": 0.75,
+      "calls": 15,
+      "tp": 13,
+      "fp": 2,
+      "fn": 232,
+      "precision": 0.867,
+      "recall": 0.053,
+      "total_cost": 277192.5,
+      "saving_vs_no_action": 4557.5
+    },
+    {
+      "threshold": 0.8,
+      "calls": 11,
+      "tp": 11,
+      "fp": 0,
+      "fn": 234,
+      "precision": 1.0,
+      "recall": 0.045,
+      "total_cost": 277817.5,
+      "saving_vs_no_action": 3932.5
+    },
+    {
+      "threshold": 0.85,
+      "calls": 9,
+      "tp": 9,
+      "fp": 0,
+      "fn": 236,
+      "precision": 1.0,
+      "recall": 0.037,
+      "total_cost": 278532.5,
+      "saving_vs_no_action": 3217.5
+    },
+    {
+      "threshold": 0.9,
+      "calls": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 242,
+      "precision": 1.0,
+      "recall": 0.012,
+      "total_cost": 280677.5,
+      "saving_vs_no_action": 1072.5
+    }
+  ],
+  "segments": {
+    "family": [
+      {
+        "family": "Air Fryer",
+        "orders": 300.0,
+        "return_rate": 0.107,
+        "flagged": 0.367,
+        "recall": 0.812,
+        "precision": 0.236
+      },
+      {
+        "family": "Ceiling Fan",
+        "orders": 320.0,
+        "return_rate": 0.072,
+        "flagged": 0.147,
+        "recall": 0.435,
+        "precision": 0.213
+      },
+      {
+        "family": "Induction Cooktop",
+        "orders": 284.0,
+        "return_rate": 0.106,
+        "flagged": 0.183,
+        "recall": 0.6,
+        "precision": 0.346
+      },
+      {
+        "family": "Mixer Grinder",
+        "orders": 301.0,
+        "return_rate": 0.076,
+        "flagged": 0.156,
+        "recall": 0.522,
+        "precision": 0.255
+      },
+      {
+        "family": "Robot Vacuum",
+        "orders": 336.0,
+        "return_rate": 0.182,
+        "flagged": 0.568,
+        "recall": 0.77,
+        "precision": 0.246
+      },
+      {
+        "family": "Room Heater",
+        "orders": 316.0,
+        "return_rate": 0.133,
+        "flagged": 0.348,
+        "recall": 0.738,
+        "precision": 0.282
+      },
+      {
+        "family": "Water Purifier",
+        "orders": 269.0,
+        "return_rate": 0.126,
+        "flagged": 0.401,
+        "recall": 0.706,
+        "precision": 0.222
+      }
+    ],
+    "sales_channel": [
+      {
+        "sales_channel": "app",
+        "orders": 706.0,
+        "return_rate": 0.12,
+        "flagged": 0.286,
+        "recall": 0.624,
+        "precision": 0.262
+      },
+      {
+        "sales_channel": "marketplace",
+        "orders": 569.0,
+        "return_rate": 0.128,
+        "flagged": 0.413,
+        "recall": 0.767,
+        "precision": 0.238
+      },
+      {
+        "sales_channel": "partner_outlet",
+        "orders": 269.0,
+        "return_rate": 0.097,
+        "flagged": 0.208,
+        "recall": 0.654,
+        "precision": 0.304
+      },
+      {
+        "sales_channel": "web",
+        "orders": 582.0,
+        "return_rate": 0.105,
+        "flagged": 0.296,
+        "recall": 0.689,
+        "precision": 0.244
+      }
+    ],
+    "payment_mode": [
+      {
+        "payment_mode": "cod",
+        "orders": 655.0,
+        "return_rate": 0.198,
+        "flagged": 0.589,
+        "recall": 0.808,
+        "precision": 0.272
+      },
+      {
+        "payment_mode": "emi",
+        "orders": 268.0,
+        "return_rate": 0.112,
+        "flagged": 0.224,
+        "recall": 0.533,
+        "precision": 0.267
+      },
+      {
+        "payment_mode": "prepaid_card",
+        "orders": 442.0,
+        "return_rate": 0.081,
+        "flagged": 0.201,
+        "recall": 0.611,
+        "precision": 0.247
+      },
+      {
+        "payment_mode": "prepaid_upi",
+        "orders": 761.0,
+        "return_rate": 0.064,
+        "flagged": 0.171,
+        "recall": 0.51,
+        "precision": 0.192
+      }
+    ],
+    "shield_member": [
+      {
+        "shield_member": "N",
+        "orders": 1648.0,
+        "return_rate": 0.089,
+        "flagged": 0.236,
+        "recall": 0.558,
+        "precision": 0.211
+      },
+      {
+        "shield_member": "Y",
+        "orders": 478.0,
+        "return_rate": 0.205,
+        "flagged": 0.577,
+        "recall": 0.878,
+        "precision": 0.312
+      }
+    ],
+    "value_band": [
+      {
+        "value_band": "Q1 low",
+        "orders": 537.0,
+        "return_rate": 0.104,
+        "flagged": 0.246,
+        "recall": 0.661,
+        "precision": 0.28
+      },
+      {
+        "value_band": "Q2",
+        "orders": 529.0,
+        "return_rate": 0.1,
+        "flagged": 0.21,
+        "recall": 0.566,
+        "precision": 0.27
+      },
+      {
+        "value_band": "Q3",
+        "orders": 529.0,
+        "return_rate": 0.102,
+        "flagged": 0.295,
+        "recall": 0.741,
+        "precision": 0.256
+      },
+      {
+        "value_band": "Q4 high",
+        "orders": 531.0,
+        "return_rate": 0.154,
+        "flagged": 0.501,
+        "recall": 0.744,
+        "precision": 0.229
+      }
+    ],
+    "month": [
+      {
+        "month": "2026-04",
+        "orders": 705.0,
+        "return_rate": 0.121,
+        "flagged": 0.315,
+        "recall": 0.729,
+        "precision": 0.279
+      },
+      {
+        "month": "2026-05",
+        "orders": 722.0,
+        "return_rate": 0.115,
+        "flagged": 0.321,
+        "recall": 0.663,
+        "precision": 0.237
+      },
+      {
+        "month": "2026-06",
+        "orders": 699.0,
+        "return_rate": 0.11,
+        "flagged": 0.302,
+        "recall": 0.662,
+        "precision": 0.242
+      }
+    ],
+    "prior_bucket": [
+      {
+        "prior_bucket": "0",
+        "orders": 650.0,
+        "return_rate": 0.083,
+        "flagged": 0.265,
+        "recall": 0.593,
+        "precision": 0.186
+      },
+      {
+        "prior_bucket": "1",
+        "orders": 690.0,
+        "return_rate": 0.099,
+        "flagged": 0.268,
+        "recall": 0.618,
+        "precision": 0.227
+      },
+      {
+        "prior_bucket": "2",
+        "orders": 481.0,
+        "return_rate": 0.129,
+        "flagged": 0.324,
+        "recall": 0.613,
+        "precision": 0.244
+      },
+      {
+        "prior_bucket": "3",
+        "orders": 187.0,
+        "return_rate": 0.144,
+        "flagged": 0.417,
+        "recall": 0.889,
+        "precision": 0.308
+      },
+      {
+        "prior_bucket": "4",
+        "orders": 118.0,
+        "return_rate": 0.288,
+        "flagged": 0.627,
+        "recall": 0.941,
+        "precision": 0.432
+      }
+    ],
+    "is_gift": [
+      {
+        "is_gift": "N",
+        "orders": 1993.0,
+        "return_rate": 0.114,
+        "flagged": 0.293,
+        "recall": 0.675,
+        "precision": 0.264
+      },
+      {
+        "is_gift": "Y",
+        "orders": 133.0,
+        "return_rate": 0.128,
+        "flagged": 0.609,
+        "recall": 0.824,
+        "precision": 0.173
+      }
+    ]
+  },
+  "drift": {
+    "test_share_flagged_at_threshold": 0.3330152671755725,
+    "valid_share_flagged": 0.312793979303857,
+    "mean_score_test": 0.11833144743012958,
+    "mean_score_valid": 0.11348009907242275,
+    "test_prior_orders_mean": 1.3907442748091603,
+    "train_prior_orders_mean": 1.3415841584158417,
+    "test_cod_share": 0.30725190839694655,
+    "train_cod_share": 0.3000761614623001,
+    "test_pincode_default_share": 0.08396946564885496,
+    "train_pincode_default_share": 0.08073115003808073
+  },
+  "test_rows": 2096
+}

@@ -1,0 +1,14 @@
+# client data stays out of Git
+data_private/
+*.csv
+!predictions.csv
+*.xlsx
+*.xls
+*.pdf
+email-thread.txt
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
