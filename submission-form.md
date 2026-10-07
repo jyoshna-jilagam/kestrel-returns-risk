@@ -31,7 +31,7 @@ The break-even threshold from policy costs, the October value correction, the in
 Claude helped with scaffolding, debugging, tests and documentation. It misled me in two small ways: a first version of the reason texts crashed because every sentence was built eagerly, and a test imported a function in a way that bypassed the test data. Both were fixed. Discarded: class-weighted XGBoost and any use of the service columns. Screen recording: <SCREEN_RECORDING_LINK>
 
 **11. Public Google Drive link**
-<GOOGLE_DRIVE_LINK>
+https://drive.google.com/drive/folders/1Mo85WQz8_9QdrbV4aZU3yI4gShY9HMCn?usp=sharing
 
 **12. Someone picks this up on Monday and you are unreachable. Three things they need to know.**
 1. Put the client CSVs in `data_private/`, run `python -m src.train`, then `python -m src.report` to rebuild everything.
